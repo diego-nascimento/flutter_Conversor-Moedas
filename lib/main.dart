@@ -136,7 +136,7 @@ buildTextField(String label, String Prefix, TextEditingController c, Function f 
   return TextField(
     onChanged: f,
     controller: c,
-      keyboardType: TextInputType.number,
+      keyboardType: TextInputType.numberWithOptions(decimal: true),
       decoration: InputDecoration(
           labelText: label,
           labelStyle: TextStyle(color: Colors.amber),
